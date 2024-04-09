@@ -2,7 +2,7 @@
 
 ## Local dev intruction
 `
-npm i 
+npm i &&
 npm run dev
 `
 ### Thank you
