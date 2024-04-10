@@ -25,8 +25,8 @@ const Navbar = () => {
         <button
           onClick={handleCollapse}
           className={`${
-            isCollapsed ? "rotate-180 max-lg:rotate-[270deg]" : "self-end"
-          } max-lg:rotate-90 transition-all`}
+            isCollapsed ? "rotate-180 max-lg:rotate-90" : "self-end max-lg:rotate-[270deg]"
+          } transition-all`}
         >
           <LeftSvg stroke="" />
         </button>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
       <nav
         className={`flex flex-auto justify-around flex-col gap-6 overflow-hidden transition-all duration-500 ${
-          isCollapsed ? "max-lg:h-0" : ""
+          isCollapsed ? "" : "max-lg:h-0"
         }`}
       >
         <div className="flex flex-auto flex-col gap-2 justify-between">
